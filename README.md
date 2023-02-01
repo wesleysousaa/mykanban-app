@@ -1,7 +1,7 @@
 
 # APP My Kanban DashBoard
 
-[![Watch the video](https://user-images.githubusercontent.com/47366440/216108865-9c06a693-0b13-4be6-a302-00babb71b277.mp4)
+![aaa](https://user-images.githubusercontent.com/47366440/216109543-4e2ec78c-ff5a-452c-9b20-7cdcde49722f.gif)
 
 ## Começando
 
@@ -10,7 +10,7 @@ Clone o repositório e abra na sua IDE
 
 Use o gerenciador de pacotes NPM
 
-### Informações sobre o consumo do APP
+### Informações sobre o APP
 #### Hooks Personalizados
 > useAuth -> Responsável por prover operações de autenticação, ex: login
 
@@ -34,17 +34,11 @@ Use o gerenciador de pacotes NPM
 
 >  -> updateCard
 
-#### São elas:
-> DB_PASS=t1vO7Q1cJB6B09gQ
+### Observações
+> Ao invés de StyledComponents optei por CSS Modular.
+> 
+> Há um warning causado pela funcionalidade de arrastar e soltar componentes, mas o mesmo não causa nenhuma interferência em nenhuma parte do site, e também não é visivel em produção.
 
-> DB_USER=wesleys
-
-#### Outras variáveis de ambiente que a api usa são:
-> PORT
-
-> AUTH_USER (corresponde ao login)
-
-> AUTH_PASS (corresponde a senha)
 
 ## Considerações finais
-Espero que gostem da API!
+Espero que gostem do APP!
