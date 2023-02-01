@@ -27,7 +27,6 @@ import { useSnackbar } from 'notistack'
 // Components
 import Cardjs from '../../Card/Cardjs'
 
-
 const ListsContainer = () => {
 
   const [todo, setTodo] = useState([])
@@ -49,7 +48,7 @@ const ListsContainer = () => {
       setCardsLists(data)
     }
     getCards()
-  }, [change])
+  }, [change, fetch])
 
   function setCardsLists(data) {
     setTodo(data.filter((c) => c.lista === "TODO"))

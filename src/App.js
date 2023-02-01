@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './App.css';
 
 // MUI
@@ -19,7 +19,7 @@ function App() {
       await logIn()
     }
     login()
-  }, [])
+  }, [logIn])
 
 
   return (
