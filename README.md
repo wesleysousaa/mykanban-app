@@ -34,6 +34,9 @@ Use o gerenciador de pacotes NPM
 
 >  -> updateCard
 
+#### Estilização de componentes
+Para essa parte utilizei uma ferramenta que possui diversos componentes estilizados para melhorar a aparência do site (MUI).
+
 ### Observações
 > Ao invés de StyledComponents optei por CSS Modular.
 > 
