@@ -1,0 +1,81 @@
+.card {
+    width: 20vw;
+    margin: 0.3em;
+}
+
+.card h3,
+h4 {
+    color: rgb(10, 10, 10);
+    margin: 0;
+}
+
+.card p {
+    margin: 0;
+    margin-top: 1em;
+    color: rgb(108, 108, 108);
+}
+
+.labelGroup {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-around;
+}
+
+.listGroupTODO,
+.listGroupDOING,
+.listGroupDONE {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: #282b2d;
+    border-radius: 0.2em;
+    padding: 0.3em;
+    transition: 0.2s;
+    -webkit-box-shadow: 52px 48px 43px -30px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 52px 48px 43px -30px rgba(0, 0, 0, 0.39);
+    box-shadow: 52px 48px 43px -30px rgba(0, 0, 0, 0.39);
+
+}
+
+.listGroupTODO p,
+.listGroupDOING p,
+.listGroupDONE p {
+    color: #FFF;
+    margin: 0;
+    margin-left: 0.3em;
+}
+
+.listGroupTODO {
+    background-color: rgb(223, 168, 65);
+}
+
+.listGroupDOING {
+    background-color: rgb(81, 81, 205);
+}
+
+.listGroupDONE {
+    background-color: rgb(63, 129, 63);
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.cardEdit {
+    margin: 1em;
+}
+
+.buttonGroup button {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}

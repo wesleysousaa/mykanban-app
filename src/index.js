@@ -4,11 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Providers
+import { AuthContextProvider } from './contexts/AuthContext';
+import { ChangeContextProvider } from './contexts/ChangeContext';
+import { SnackbarProvider } from 'notistack';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <AuthContextProvider>
+    <ChangeContextProvider>
+      <SnackbarProvider>
+        <App />
+      </SnackbarProvider>
+    </ChangeContextProvider>
+  </AuthContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

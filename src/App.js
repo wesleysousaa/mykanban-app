@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
 
+// MUI
+import CircularProgress from '@mui/material/CircularProgress';
+
+// Hooks
+import { useAuth } from './hooks/useAuth';
+
+// Components
+import ListsContainer from './components/ListContainer/ListsContainer';
+
 function App() {
+
+  const { logIn, loading, token } = useAuth()
+
+  useEffect(() => {
+    async function login() {
+      await logIn()
+    }
+    login()
+  }, [])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!loading && !token ? (
+        <h2>Não foi possivel fazer a autenticação</h2>
+      ) : (
+        (loading ? (
+          <CircularProgress size={100} sx={{color:'#FFF'}} />
+        ) : (
+          <ListsContainer />
+        ))
+
+      )}
+
     </div>
   );
 }
