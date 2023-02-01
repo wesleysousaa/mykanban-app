@@ -19,7 +19,8 @@ function App() {
       await logIn()
     }
     login()
-  }, [logIn])
+    // LogIn não pode se estar nom array de dependências
+  }, [])
 
 
   return (

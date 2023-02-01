@@ -48,7 +48,8 @@ const ListsContainer = () => {
       setCardsLists(data)
     }
     getCards()
-  }, [change, fetch])
+    // LogIn não pode se estar no array de dependências
+  }, [change])
 
   function setCardsLists(data) {
     setTodo(data.filter((c) => c.lista === "TODO"))
