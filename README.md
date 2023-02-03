@@ -10,6 +10,8 @@ Clone o repositório e abra na sua IDE
 
 Use o gerenciador de pacotes NPM
 
+Caso dê em react-scripts: command not found after running npm start Digite npm install 
+
 ### Informações sobre o APP
 #### Hooks Personalizados
 > useAuth -> Responsável por prover operações de autenticação, ex: login
